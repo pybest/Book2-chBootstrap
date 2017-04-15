@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}logged_out.html{% endblock %}
+
+{% block extra-style %}
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <h1>Logged out </h1>
+
+    <p>"Thanks for spending your quality time with this web site today."</p>
+
+    <p><a href="{% url 'login' %}">Log in again</a></p>
+
+{% endblock %}
